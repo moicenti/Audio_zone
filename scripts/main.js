@@ -1,6 +1,10 @@
 import { AudioZoneApp } from './zone-app.js';
 
+console.log('Audio Zones | main.js cargado');
+
 Hooks.on('renderSidebar', (sidebar, html) => {
+  console.log('renderSidebar hook disparado');
+
   if (html.find('#audio-zones-button').length) return;
 
   const button = $(`
@@ -9,9 +13,13 @@ Hooks.on('renderSidebar', (sidebar, html) => {
     </button>
   `);
 
+  console.log('botón creado');
+
   button.click(() => {
+    console.log('botón clickeado');
     new AudioZoneApp().render(true);
   });
 
   html.find('#sidebar-tabs').append(button);
+  console.log('botón insertado en sidebar');
 });
