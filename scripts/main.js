@@ -5,8 +5,7 @@ console.log("Audio Zones | main.js cargado");
 Hooks.on("renderSidebar", (sidebar, html) => {
   try {
     const $html = $(html);
-    console.log("Audio Zones | " + html);
-    console.log("Audio Zones | " + $html);
+
     console.log("Audio Zones | renderSidebar disparado");
 
     if ($html.find("#audio-zones-button").length) {
@@ -15,9 +14,11 @@ Hooks.on("renderSidebar", (sidebar, html) => {
     }
     console.log("d'Audio Zones | El boton no estbaa creado'");
     const button = $(`
+   <li>
     <button id="audio-zones-button" class="audio-zones-btn">
       <i class="fas fa-volume-up"></i>
     </button>
+   </li>
   `);
 
     console.log("Audio Zones | boton creado");
@@ -27,7 +28,7 @@ Hooks.on("renderSidebar", (sidebar, html) => {
       new AudioZoneApp().render(true);
     });
 
-    $html.find("#sidebar-tabs").append(button);
+    $html.find("#sidebar-tabs").find("menu").append(button);
     console.log("Audio Zones | boton insertado");
   } catch (error) {
     console.log("Audio zone | valio verga " + error);
