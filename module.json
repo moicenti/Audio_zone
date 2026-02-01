@@ -2,7 +2,7 @@
   "id": "audio-zones",
   "title": "Audio Zones",
   "description": "Control automático de audio por zonas, con posible vista grafica",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "authors": [
     {
       "name": "matoceti"
