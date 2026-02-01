@@ -5,8 +5,10 @@ console.log('Audio Zones | main.js cargado');
 Hooks.on('renderSidebar', (sidebar, html) => {
   console.log('renderSidebar hook disparado');
 
-  if (html.find('#audio-zones-button').length) return;
-
+  if (html.find('#audio-zones-button').length){ 
+    console.log("ggs");
+    return;}
+console.log("duro")
   const button = $(`
     <button id="audio-zones-button" class="audio-zones-btn">
       <i class="fas fa-volume-up"></i>
