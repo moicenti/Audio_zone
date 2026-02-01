@@ -2,7 +2,7 @@
   "id": "audio-zones",
   "title": "Audio Zones",
   "description": "Control automático de audio por zonas, con posible vista grafica",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "authors": [
     {
       "name": "matoceti"
@@ -10,9 +10,9 @@
   ],
   "minimumCoreVersion": "13",
   "compatibleCoreVersion": "13",
-  "scripts": [
-    "scripts/main.js"
-  ],
+  "esmodules": [
+  "scripts/main.js"
+],
 "manifest": "https://raw.githubusercontent.com/moicenti/Audio_zone/main/module.json",
   "download": "https://github.com/moicenti/Audio_zone/archive/refs/heads/main.zip"
 }
