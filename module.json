@@ -1,0 +1,18 @@
+{
+  "id": "audio-zones",
+  "title": "Audio Zones",
+  "description": "Control automático de audio por zonas, con posible vista grafica",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "matoceti"
+    }
+  ],
+  "minimumCoreVersion": "13",
+  "compatibleCoreVersion": "13",
+  "scripts": [
+    "scripts/main.js"
+  ],
+  "manifest": "",
+  "download": ""
+}
